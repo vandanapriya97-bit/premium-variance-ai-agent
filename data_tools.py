@@ -209,10 +209,24 @@ class PremiumDataStore:
         return aliases.get(raw.lower(), raw)
 
     @staticmethod
-    def _normalize_gender(value: str) -> str:
-        raw = str(value).strip().lower()
-        aliases = {"m": "M", "male": "M", "f": "F", "female": "F"}
-        return aliases.get(raw, str(value).strip().upper())
+def _normalize_gender(value: str) -> str:
+    raw = str(value).strip().lower()
+
+    aliases = {
+        "m": "M",
+        "male": "M",
+        "males": "M",
+        "man": "M",
+        "men": "M",
+
+        "f": "F",
+        "female": "F",
+        "females": "F",
+        "woman": "F",
+        "women": "F",
+    }
+
+    return aliases.get(raw, str(value).strip().upper())
 
     @staticmethod
     def _normalize_quarter(value: str) -> str:
