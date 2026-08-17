@@ -1,0 +1,22 @@
+PREMIUM VARIANCE AI AGENT V2 — START HERE
+
+1. Open this folder in VS Code.
+2. In the terminal run:
+   py -m venv .venv
+3. If PowerShell blocks activation:
+   Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
+4. Activate:
+   .\.venv\Scripts\Activate.ps1
+5. Install:
+   python -m pip install -r requirements.txt
+6. Copy .streamlit\secrets.toml.example to .streamlit\secrets.toml
+7. Put your existing Gemini API key into secrets.toml.
+8. Run deterministic test:
+   python check_data.py
+9. Run tests:
+   python -m pytest -q
+10. Run the app:
+   python -m streamlit run app.py
+
+Suggested first question:
+Compare Client 001 between Q1 and Q4
