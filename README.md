@@ -1,3 +1,7 @@
+## Problem Statement
+
+Each quarter during valuation reporting, we are responsible for explaining the premium variance between the two quarters. There are multiple moving parts such as changes to assumptions (called COBS) as well as data update impacts (called accruals).The difference between the ending position of the current quarter and ending position of the prior quarter needs to be explained as COBS + Accruals + Persistency (remaining balance).COBS and accruals is sourced from the available model results. The agent helps us to 1.compute persistency 2.create a summary of the impacts and drivers for management presentation.
+
 # Premium Variance AI Agent — V2
 
 This is the scaled version of the Premium Variance Agent.
